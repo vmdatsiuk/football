@@ -1,0 +1,100 @@
+<style>
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+aside{
+    width: 219px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+aside p{
+    margin: 0;
+    padding: 15px;
+    padding-bottom: 10px;
+    font-size: 16px;
+line-height: 24px;
+color: #ffffff;
+font-family: "Roboto Slab";
+font-weight: 700;
+background-color: #1f1f56;
+}
+.sub-menu,
+.aside-menu{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    background-color: #e4e4ec;
+}
+.aside-menu a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #25252c;
+    font-family: "Arial"
+}
+.aside-menu li{
+    position: relative;
+}
+.aside-menu>li::before{
+    content: "";
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    right: 15px;
+    top: 19px;
+    border-right: 2px solid #666; 
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    transition: all 1s ease;
+}
+.aside-menu>li:hover:before{
+    border-right-color: #fff; 
+    border-bottom-color: #fff;
+    transform: rotate(45deg);
+    top: 16px;
+}
+.aside-menu>li:hover>a{
+    background-color: #fd8300;
+    color: #fff;
+}
+.aside-menu>li:hover .sub-menu{
+    display: block;
+}
+.sub-menu{
+    display: none;
+}
+.sub-menu a{
+    color: #666;
+    padding-left: 30px;
+}
+.sub-menu li:hover a{
+    background-color: #cecedd;
+    color: #666;
+}
+</style>
+<aside>
+    <p>Категорії проектів</p>
+<ul class="aside-menu">
+    <li><a href="#">Генеральний план</a></li>
+    <li>
+        <a href="#">Навколишнє середовище</a>
+        <ul class="sub-menu">
+            <li><a href="#">Продані</a></li>
+            <li><a href="#">Заброньованні</a></li>
+            <li><a href="#">В процесі будівництва</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Умови придбання</a></li>
+    <li><a href="#">Загородні котеджі</a></li>
+    <li><a href="#">Інфраструктура</a></li>
+    <li><a href="#">Готові будинки</a></li>
+</ul>
+</aside>
